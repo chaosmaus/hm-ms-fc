@@ -824,9 +824,10 @@ $(document).ready(function () {
             e.preventDefault();
             return;
           })
-
-          $(document).on('click', ()=>{
-            //console.log('card span length')
+          
+          $(document).on('click', (e)=>{
+            console.log($(e.target))
+            if( $(e.target).hasClass('item-slider_arrow ')  || $(e.target).hasClass('map-slider_arrow-icon')) return;
             if( $('.card-span').children().length === 0 ) if (!($('.map_center-card').hasClass('hidden'))) $('.map_center-card').addClass('hidden');
           })
           
