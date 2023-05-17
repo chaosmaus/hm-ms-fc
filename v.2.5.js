@@ -829,7 +829,7 @@ $(document).ready(function () {
 
           $('.map_mobile-card_wrapper').removeClass('hidden')
         } else if (($(window).width() > 480 && $(window).width() < 1440) || ($(window).width() > 480 && $(window).height() < 750)) {
-          console.log('$(window).height() ', $(window).height() )
+          //console.log('$(window).height() ', $(window).height() )
           $('.item').each((index, element) => {
             if ($(element).find('.item_guesty-id').text() === e.features[0].properties.guesty) {
               $('.map_center-card').find('.title_alternative').text($(element).find('.title_alternative').text());
